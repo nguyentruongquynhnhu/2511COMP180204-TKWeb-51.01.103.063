@@ -1,0 +1,114 @@
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 12px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+}
+
+.lang-group {
+  gap: 4px;
+  margin-left: 10px;
+}
+
+.lang-btn {
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.lang-btn:hover {
+  background-color: #e2e6ea;
+}
+
+.hh-header {
+  position: relative;
+  min-height: 170px; 
+}
+.hh-logo {
+  position: absolute;
+  right: 0px;
+  width: 400px;
+}
+.hh-company {
+  font-family: Impact;
+  font-size: 35px;
+  text-shadow: 0 0 2px black;
+  position: absolute;
+  top: 45px;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted gray;
+}
+
+.hh-slogan {
+  position: absolute;
+  top: 100px;
+}
+
+.hh-sheet {
+  box-shadow: 0 0 5px lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+  top: -10px;
+  margin-top: 20px;
+}
+
+.hh-body {
+  padding: 5px;
+}
+
+.hh-cart ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-size: smaller;
+}
+
+.hh-cart img {
+  height: 95%;
+  width: 40%;
+}
+
+.hh-card {
+  margin: 7px 0;
+}
+
+.hh-product {
+  text-align: center;
+  padding: 5px 2px;
+  display: inline-block;
+}
+
+.hh-product.card-body img {
+  height: 150px;
+  max-width: 95%;
+}
+.hh-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 300px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
