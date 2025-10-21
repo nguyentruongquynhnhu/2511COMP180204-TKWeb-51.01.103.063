@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web cá nhân</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+    }
+    .menu {
+      width: 220px;
+      background-color: #0c8f28;
+      padding-top: 30px;
+      flex-shrink: 0;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+
+    .menu nav a {
+      color: #fff;
+      padding: 15px 25px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .menu nav a:hover {
+      background-color: #1ad364;
+    }
+
+    .menu nav a.active {
+      background-color: #115817;
+      font-weight: bold;
+    }
+    .main-content {
+      flex: 1;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 45px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    p.intro {
+      text-align: center;
+      margin-bottom: 40px;
+      font-style: italic;
+      color: #555;
+    }
+    .hobby-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .hobby {
+      background-color: #f0f0f5;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .hobby h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .hobby p {
+      margin: 10px 0 0;
+    }
+    .hobby-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .song-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+}
+
+.song-item {
+  text-align: center;
+}
+
+.song-item img {
+  width: 315px;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <aside class="menu">
+    <nav>
+      <a href="./webcanhan.html"><i class="bi bi-house-door-fill"></i> Trang chủ</a>
+      <a href="./kehoach.html"><i class="bi bi-card-checklist"></i> Kế hoạch học tập</a>
+      <a href="./sothich.html" class="active"><i class="bi bi-person-hearts"></i> Sở thích</a>
+      <a href="./lienhe.html"><i class="bi bi-telephone-fill"></i> Liên hệ</a>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <div class="container">
+      <h1>Những sở thích của tôi</h1>
+      <p class="intro">“Cuộc sống chỉ 10% là những gì bạn tạo ra, và 90% là cách bạn đón nhận nó.” – Irving Berlin</p>
+
+      <div class="hobby-list">
+        <div class="hobby">
+          <h2>Âm nhạc <i class="bi bi-music-note-beamed"></i></h2>
+          <p>Tôi nghe nhạc mỗi ngày,âm nhạc có thể giúp tôi thư giãn,giảm căng thẳng</p>
+
+          <p style="font-weight: bold;text-align: center";>Các bài nhạc tôi yêu thích</p>
+
+          <div class="song-gallery">
+            <div class="song-item">
+              <img src="./star.PNG" alt="Star - Colde">
+              <p><a href="https://youtu.be/b0EPtQFW6y8" target="_blank">Star - Colde</a></p>
+            </div>
+
+            <div class="song-item">
+              <img src="./understand.PNG" alt="Understand - Keshi">
+              <p><a href="https://youtu.be/Allkt6sVCqU" target="_blank">Understand - Keshi</a></p>
+            </div>
+
+            <div class="song-item">
+              <img src="./if you.PNG" alt="If You - Big Bang">
+              <p> <a href="https://youtu.be/h9hdorPqukU" target="_blank">If You - Big Bang</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hobby">
+          <h2>Đọc sách <i class="bi bi-book"></i></h2>
+          <p>Tôi thường đọc sách vào cuối tuần, vừa bổ sung được nhiều kiến thức vừa giúp tôi phát triển bản thân mình.</p>
+          <p style="font-weight: bold;text-align: center";>Các quyển sách yêu thích của tôi</p>
+
+          <div class="song-gallery">
+            <div class="song-item">
+              <img src="https://revelogue.com/wp-content/uploads/2021/04/tieu-thuyet-Nguoi-dua-dieu-e1617431346252.jpg" alt="Ảnh sách người đua diều">
+              <p>Người đua diều-Hosseini</p>
+            </div>
+
+            <div class="song-item">
+              <img src="https://sachnoi.cc/wp-content/uploads/2023/03/Sach-Noi-Cay-Cam-Ngot-Cua-Toi-Jose-Mauro-de-Vasconcelos-2-768x437.jpg" alt="Ảnh sách cây cam ngọt của tôi">
+              <p>Cây cam ngọt của tôi-José Mauro</p>
+            </div>
+
+            <div class="song-item">
+              <img src="https://voiz-prod.s3.cloud.cmctelecom.vn/uploads/avatar/filename/418006/6d1e25a4c09447cd.png" alt="Ảnh sách hạ đỏ">
+              <p>Hạ đỏ-Nguyễn Nhật Ánh</p>
+            </div>
+        </div>
+        </div>
+      
+
+        <div class="hobby">
+          <h2>Xem phim <i class="bi bi-tv"></i></h2>
+          <p>Tôi thường xem phim vào các buổi tối cuối tuần. Mỗi bộ phim mang đến cho tôi nhiều góc nhìn khác nhau nhưng đầy ý nghĩa.</p>
+           <p style="font-weight: bold;text-align: center";>Các bộ phim tôi yêu thích</p>
+
+          <div class="song-gallery">
+            <div class="song-item">
+              <img src="https://tse1.mm.bing.net/th/id/OIP.yjYBLgRVCiPwR3OoVoX_4QHaD5?pid=Api&P=0&h=220" alt="Ảnh phim Twinkling Watermelon">
+              <p>Twinkling Watermelon</p>
+            </div>
+
+            <div class="song-item">
+              <img src="https://static2.vieon.vn/vieplay-image/poster_v4/2022/07/19/n3m9txph_660x946-andanh.jpg" alt="Ảnh phim Taxi Driver">
+              <p>Taxi Driver</p>
+            </div>
+
+            <div class="song-item">
+              <img src="https://bilder.fernsehserien.de/sendung/hr2/when-life-gives-you-tangerines_750550.png" alt="Ảnh phim When life gives you tangerines">
+              <p>when life gives you tangerines</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

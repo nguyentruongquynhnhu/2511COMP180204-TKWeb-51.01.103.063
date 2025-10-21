@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hồ cá vui nhộn</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/mystyle.css">
+    </head>
+    <body>
+        <div id="content">
+            <div id="shark"><img src="../image/shark.png" width="auto" height="auto"></div>
+            <div id="golFishSchool"><img src="../image/fisshhh.png" width="auto" height="auto"></div>
+            <div id="diver1"><img src="../image/diver1.png" width="auto" height="auto"></div>
+            <div id="diver2"><img src="../image/diver2.png" width="auto" height="auto"></div>
+            <div id="turtle"><img src="../image/turtle.png" width="100px" height="auto"></div>
+            <div id="faintSchool1"><img src="../image/faintSchool.png" width="auto" height="auto"></div>
+            <div id="faintSchool2"><img src="../image/faintSchool.png" width="auto" height="auto"></div>
+            <div id="faintSchool3"><img src="../image/faintSchool.png" width="auto" height="auto"></div>
+            <div id="faintSchool4"><img src="../image/faintSchool.png" width="auto" height="auto"></div>
+            
+        </div>
+        <div id="controls">
+  <button id="changeBgBtn">Đổi nền</button>
+  <button id="musicBtn">Phát nhạc</button>
+</div>
+
+        <audio id="bgMusic" loop>
+        <source src="../blue (instrumental).mp3" type="audio/mpeg" />
+       
+        </audio>
+
+        <script>
+        const backgrounds = [
+            'url(https://static.vecteezy.com/system/resources/previews/030/663/955/non_2x/cartoon-style-ocean-background-for-product-showca-free-photo.jpg)',
+            'url(https://img.freepik.com/premium-vector/cartoon-seamless-underwater-background-ocean-bottom-nature-vector-illustration_592022-20.jpg?w=2000)',
+            'url(https://img.freepik.com/free-vector/sea-wallpaper-video-conferencing_23-2148635781.jpg)'
+        ];
+
+        let currentIndex = 0;
+        const btnChangeBg = document.getElementById('changeBgBtn');
+        const btnMusic = document.getElementById('musicBtn');
+        const audio = document.getElementById('bgMusic');
+
+        document.body.style.backgroundImage = backgrounds[currentIndex];
+
+        btnChangeBg.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % backgrounds.length;
+            document.body.style.backgroundImage = backgrounds[currentIndex];
+        });
+
+        btnMusic.addEventListener('click', () => {
+            if(audio.paused) {
+            audio.play();
+            btnMusic.textContent = 'Tạm dừng nhạc';
+            } else {
+            audio.pause();
+            btnMusic.textContent = 'Phát nhạc';
+            }
+        });
+        </script>
+    </body>
+</html>

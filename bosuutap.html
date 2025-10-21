@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bộ Sưu Tập Halloween</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100vh;
+      font-family: "Poppins", sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow: hidden;
+      background-image: url('https://png.pngtree.com/background/20230513/original/pngtree-halloween-cartoon-illustration-picture-image_2511244.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: rgba(255, 140, 0, 0.9);
+      text-align: center;
+      padding: 10px 0;
+      box-shadow: 0 0 20px #ff8c00;
+      animation: flicker 2s infinite;
+      flex-shrink: 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: black;
+      text-shadow: 2px 2px 10px white;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: black; }
+    .hero {
+      flex: 1;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      overflow-y: auto;
+    }
+    .hero h2 {
+      text-align: center;
+      color: #ff6600;
+      margin-bottom: 30px;
+      animation: flicker 3s infinite alternate;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border: 3px solid #ff6600;
+      border-radius: 8px;
+      transition: transform 0.3s, filter 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgba(255, 140, 0, 0.9);
+      color: black;
+      font-weight: bold;
+      animation: flicker 1.5s infinite alternate;
+      flex-shrink: 0;
+    }
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600;
+      }
+      20%, 24%, 55% {
+        opacity: 0.5;
+        text-shadow: none;
+      }
+    }
+    .ghost, .ghost2 {
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+
+    .ghost {
+      top: 100px;
+      left: -150px;
+      width: 100px;
+      height: 100px;
+      background-image: url('../images/Iconcreme-Halloween-Bat.512.png');
+      animation: fly 12s linear infinite;
+    }
+
+    @keyframes fly {
+      0% { left: -150px; top: 100px; opacity: 0.2; }
+      25% { top: 80px; opacity: 1; }
+      50% { top: 120px; }
+      75% { top: 90px; }
+      100% { left: 110%; top: 100px; opacity: 0; }
+    }
+
+    .ghost2 {
+      top: 200px;
+      left: -200px;
+      width: 80px;
+      height: 80px;
+      background-image: url('../images/Iconcreme-Halloween-Pumpkin.512.png');
+      animation: fly2 18s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes fly2 {
+      0% { left: -200px; top: 200px; }
+      50% { top: 230px; }
+      100% { left: 110%; top: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👻 Bộ Sưu Tập Kinh Dị Halloween 👻</h1>
+    <nav>
+      <ul>
+        <li><a href="trangchu.html">Trang chủ</a></li>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <li><a href="sanpham.html">Sản phẩm</a></li>
+        <li><a href="bosuutap.html">Bộ sưu tập</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+        <li><a href="dangky.html">Đăng ký</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Hình Ảnh Kinh Dị Cho Đêm Halloween</h2>
+    <div class="gallery">
+      <img src="https://png.pngtree.com/png-clipart/20231023/original/pngtree-cute-zombie-cartoon-illustration-halloween-concept-character-png-image_13398287.png" alt="Zombie">
+      <img src="https://png.pngtree.com/png-clipart/20211116/original/pngtree-halloween-purple-haunted-house-cartoon-png-image_6941553.png" alt="Ngôi nhà ma">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.-qvt03XY0cR6IFO711TxNQHaHa?pid=Api&P=0&h=220" alt="Ma siêu đáng sợ">
+      <img src="https://png.pngtree.com/png-clipart/20230430/original/pngtree-halloween-ghost-cartoon-black-png-image_9127097.png" alt="Hồn ma">
+      <img src="https://static.vecteezy.com/system/resources/previews/021/594/277/original/halloween-character-kid-cartoon-in-halloween-vampire-costume-png.png" alt="Ma cà rồng">
+      <img src="https://static.vecteezy.com/system/resources/previews/013/909/218/non_2x/cute-halloween-spider-cartoon-on-white-background-free-vector.jpg" alt="Nhện kinh dị">
+      <img src="https://clipart-library.com/2023/dancing-mummy-halloween-cartoon-colored-clipart_576561-2710.jpg" alt="Xác ướp">
+      <img src="https://static.vecteezy.com/system/resources/previews/016/385/888/large_2x/cartoon-halloween-black-cat-eye-yellow-free-vector.jpg" alt="Mèo đen đáng sợ">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.h8Gal6JKhlegc9HTZBcOcwHaHa?pid=Api&P=0&h=220" alt="Phù thủy đáng sợ">
+      <img src="https://png.pngtree.com/png-clipart/20220726/original/pngtree-halloween-pumpkin-wearing-a-witch-hat-png-image_8405745.png" alt="Bí ngô">
+    </div>
+  </section>
+  <footer>
+    <p>&copy;  2025 Lễ hội Halloween - By ABCDE</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Web cá nhân</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<style>
+  body {
+    margin: 0; font-family: Arial, sans-serif; display: flex;
+  }
+  .menu {
+    position: fixed;
+    top: 0; left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #0c8f28;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu nav a {
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+  }
+  .menu nav a:hover {
+    background-color: #1ad364;
+  }
+  .menu nav a.active {
+    background-color: #115817;
+    font-weight: bold;
+  }
+  div {
+    margin-left: 80px;
+    padding: 10px;
+  }
+  .box{display:grid;grid-template-columns: 40% 60%;font-size: 25px;}
+  
+</style>
+</head>
+<body>
+    <aside class="menu">
+      <nav>
+      <a href="./webcanhan.html"><i class="bi bi-house-door-fill"></i> Trang chủ</a>
+      <a href="./kehoach.html" class="active"><i class="bi bi-card-checklist"></i> Kế hoạch học tập</a>
+      <a href="./sothich.html"><i class="bi bi-person-hearts"></i> Sở thích</a>
+      <a href="./lienhe.html"><i class="bi bi-telephone-fill"></i> Liên hệ</a>
+      </nav>
+    </aside>
+   <div>
+    <h1 style="color:#30a74a;text-align: center";>KẾ HOẠCH HỌC TẬP CỦA TÔI TRONG THỜI GIAN TỚI</h1>
+    <hr color="#30a74a;" width="1100">
+    <div class="box">
+    <div><p><b>MỤC TIÊU HỌC TẬP</b></p>
+    <ul>
+        <li>Nắm vững kiến thức nền tảng của môn lập trình web</li>
+        <li>Học tốt toán cơ sở và toán rời rạc</li>
+        <li>Làm hết bài tập các chương trên Upcoder</li>
+        <li>Hiểu các môn đại cương </li>
+    </ul>
+    <p><b>GHI CHÚ CÁ NHÂN</b></p>
+    <ul>
+        <li>Thời gian tự học gấp đôi </li>
+        <li>Nên thực hành nhiều để nhớ code</li>
+        <li>Thường xuyên ôn tập lại</li>
+        <li>Giảng dạy,học nhóm để nhớ lâu hơn </li>
+    </ul>
+    </div>
+    <div>
+    <table  border="1" cellpadding="8" height="500px" width="600px">
+    <caption>LỘ TRÌNH HỌC TẬP</caption>
+    <tr style="background-color: #30a74a;">
+        <th>Thời gian</th>
+        <th>Nội dung học</th>
+        <th>Ghi chú</th>
+    </tr>
+    <tr>
+        <td>Tuần 1</td>
+        <td>HTML</td>
+        <td>Nghe giảng,làm bài tập</td>
+    </tr>
+    <tr>
+        <td>Tuần 2</td>
+        <td>Học về CSS</td>
+        <td>Thực hành tạo các web tại nhà</td>
+    </tr>
+    <tr>
+        <td>Tuần 3</td>
+        <td>Học Javascript</td>
+        <td>Làm các báo cáo được giao</td>
+    </tr>
+    <tr>
+        <td>Tuần 4</td>
+        <td>Báo cáo</td>
+        <td>Học,làm nhóm về đề tài</td>
+    </tr>
+    </table>
+    </div>
+   </div>
+
+</body>
+</html>

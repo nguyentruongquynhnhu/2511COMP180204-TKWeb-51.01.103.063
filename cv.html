@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cv Cá Nhân</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .cv-container {
+      width: auto;
+      display: flex;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* Cột trái */
+    .left {
+      width: 40%;
+      background: #2c2c2c;
+      color: white;
+      padding: 30px 25px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #555;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #fff;
+      margin: 20px 0 10px;
+      padding-bottom: 5px;
+    }
+
+    .contact p, .about p, .skills p, .reference p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .skills .bar {
+      width: 100%;
+      background: #444;
+      border-radius: 10px;
+      margin: 5px 0 10px;
+      height: 8px;
+    }
+
+    .skills .fill {
+      height: 8px;
+      background: #00bcd4;
+      border-radius: 10px;
+    }
+
+    /* Cột phải */
+    .right {
+      width: 60%;
+      padding: 30px 40px;
+    }
+
+    .name {
+      font-size: 30px;
+      font-weight: bold;
+      color: #2c2c2c;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .info-section {
+      margin-bottom: 25px;
+    }
+
+    .info-section h3 {
+      font-size: 18px;
+      color: #333;
+      border-bottom: 2px solid #00bcd4;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .info-section p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .date-range {
+      font-weight: bold;
+      color: #00bcd4;
+      margin-top: 8px;
+      display: block;
+    }
+    .contact a{
+        color:white;
+        text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cv-container">
+
+    <!-- CỘT TRÁI -->
+    <div class="left">
+      <img src="https://img4.thuthuatphanmem.vn/uploads/2020/12/26/anh-nen-tho-hoat-hinh-cho-may-tinh_021253279.jpg" alt="avatar" class="profile-pic">
+      
+      <div class="about">
+        <h3 class="section-title">Giới thiệu</h3>
+        <p>Tôi học sư phạm tin,chuyên ngành công nghệ thông tin.Tôi yêu thích lập trình và muốn học hỏi,sáng tạo các sản phẩm có liên quan đến web. </p>
+      </div>
+
+      <div class="contact">
+        <h3 class="section-title">Liên hệ</h3>
+        <p>📍 Địa chỉ: TP. Hồ Chí Minh</p>
+        <p>📞 0123456789</p>
+        <p>📧 <a href="mailto:nguyentruongquynhnhu2@gmail.com">Email:nguyentruongquynhnhu2@gmail.com</a></p>
+      </div>
+
+      <div class="skills">
+        <h3 class="section-title">Kỹ năng</h3>
+        <p>Photoshop</p>
+        <div class="bar"><div class="fill" style="width:30%"></div></div>
+        <p>HTML</p>
+        <div class="bar"><div class="fill" style="width:50%"></div></div>
+        <p>CSS</p>
+        <div class="bar"><div class="fill" style="width:55%"></div></div>
+        <p>JavaScript</p>
+        <div class="bar"><div class="fill" style="width:45%"></div></div>
+      </div>
+
+      <div class="reference">
+        <h3 class="section-title">Người tham chiếu</h3>
+        <p><strong>Mr.ABC</strong> – Công ty CDE<br>Điện thoại: 0987654321</p>
+        <p><strong>Mr.ANT</strong> – Công ty CDE<br>Điện thoại: 0192837465</p>
+      </div>
+    </div>
+
+    <!-- CỘT PHẢI -->
+    <div class="right">
+      <h1 class="name">NGUYỄN TRƯƠNG QUỲNH NHƯ</h1>
+      <p class="title">Vị trí:Lập trình viên</p>
+
+      <div class="info-section">
+        <h3>Chứng chỉ</h3>
+        <p>2022 – Chứng chỉ Mos </p>
+        <p>2023 – Chứng chỉ Mos Powerpoint</p>
+        <p>2024 – Chứng chỉ Mos Excel</p>
+      </div>
+
+      <div class="info-section">
+        <h3>Kinh nghiệm làm việc</h3>
+        <p class="date-range">2026–2028 | Công ty TNHH ABC</p>
+        <p>Làm việc trong nhóm Agile với vai trò Front-End Developer. Góp phần xây dựng giao diện người dùng bằng ReactJS. Thường xuyên trao đổi với backend và QA để đảm bảo luồng hoạt động trơn tru, nâng cao kỹ năng giao tiếp và teamwork.</p>
+        
+        <p class="date-range">2028–2030 | Freelance</p>
+        <p>Thiết kế và triển khai các website giới thiệu cá nhân và doanh nghiệp nhỏ. Làm việc trực tiếp với khách hàng để phân tích yêu cầu, xây dựng giao diện UI theo yêu cầu. Đảm bảo dự án bàn giao đúng thời hạn và tối ưu SEO cơ bản.</p>
+      </div>
+
+      <div class="info-section">
+        <h3>Sở thích</h3>
+        <p>🎵 Nghe nhạc – tôi nghe nhạc mỗi ngày để thư giãn,giảm căng thẳng trong cuộc sống</p>
+        <p>🌍 Du lịch – tôi thích du lịch để khám phá về văn hóa,ẩm thực,phong tục của những nơi khác nhau</p>
+        <p>💻 Học công nghệ mới – tôi thích học tập để phát triển bản thân,nâng cao tầm hiểu biết</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
